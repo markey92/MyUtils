@@ -5,6 +5,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>h2db</module>
+        <module>mybatis</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
