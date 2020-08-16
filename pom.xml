@@ -13,10 +13,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.markey</groupId>
-    <artifactId>design</artifactId>
+    <artifactId>myutils</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>design</name>
-    <description>Demo project for Design</description>
+    <name>MyUtils</name>
+    <description>Demo project for MyUtils</description>
 
     <properties>
         <java.version>1.8</java.version>
