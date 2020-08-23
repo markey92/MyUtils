@@ -6,6 +6,7 @@
     <modules>
         <module>h2db</module>
         <module>mybatis</module>
+        <module>quartz</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
