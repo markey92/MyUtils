@@ -1,2 +1,5 @@
 .idea
 *.class
+/h2db/target/classes
+/quartz/target/classes/META-INF
+classes

@@ -1,0 +1,27 @@
+server:
+  port: 8080
+
+spring:
+  # 数据源配置
+  datasource:
+    platform: h2  #表明使用的数据库平台是h2
+    driverClassName: org.h2.Driver  #配置JDBC Driver
+    ##数据初始化设置
+    #data: classpath:quartz_init.sql  #进行该配置后，每次启动程序，程序都会运行resources/db/data.sql文件，对数据库的数据操作。
+    schema: classpath:quartz_init_h2.sql  #进行该配置后，每次启动程序，程序都会运行resources/db/schema.sql文件，对数据库的结构进行操作。
+    url: jdbc:h2:mem:dbtest  #配置h2数据库的连接地址
+    username: sa  #配置数据库用户名
+    password: sa  #配置数据库密码
+
+  # h2数据库配置
+  h2:
+    console:
+      enabled: true  #进行该配置，程序开启时就会启动h2 web consloe。当然这是默认的，如果你不想在启动程序时启动h2 w
+      path: /h2  #进行该配置，你就可以通过YOUR_URL/h2访问h2 web consloe。YOUR_URL是你程序的访问URl。
+      settings:
+        web-allow-others: true  # 进行该配置后，h2 web consloe就可以在远程访问了。否则只能在本机访问
+  # jpa配置
+  jpa:
+    hibernate:
+      ddl-auto: update  #设置ddl模式
+    show-sql: true #启用SQL语句的日志记录

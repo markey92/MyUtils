@@ -1,10 +1,9 @@
-package com.markey.quartz.job;
+package com.markey.quartz.simple;
 
 import org.quartz.Job;
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
 
-import java.util.Calendar;
 import java.util.Date;
 
 /**

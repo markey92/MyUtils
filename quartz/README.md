@@ -187,3 +187,8 @@ public class Application {
 }
 ```
 
+# 分布式
+
+建库脚本地址：
+
+ https://github.com/quartz-scheduler/quartz/tree/master/quartz-core/src/main/resources/org/quartz/impl/jdbcjobstore 
